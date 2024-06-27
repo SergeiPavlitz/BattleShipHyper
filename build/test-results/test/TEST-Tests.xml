@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-06-27T22:04:11" hostname="LAPTOP-V87VIDHI" time="0.495">
+  <properties/>
+  <testcase name="start" classname="Tests" time="0.495">
+    <failure message="java.lang.AssertionError: Exception in test #1&#10;&#10;java.lang.StringIndexOutOfBoundsException: String index out of range: 0&#10;&#9;at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)&#10;&#9;at java.base/java.lang.String.charAt(String.java:1519)&#10;&#9;at battleship.GameController$Utils.convertCoordsInIndices(GameController.kt:247)&#10;&#9;at battleship.GameController$Utils.checkCoords(GameController.kt:221)&#10;&#9;at battleship.GameController.placeFleet(GameController.kt:127)&#10;&#9;at battleship.GameController.play(GameController.kt:24)&#10;&#9;at battleship.MainKt.main(Main.kt:4)&#10;&#9;at battleship.MainKt.main(Main.kt)&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;Player 1, place your ships on the game field&#10;  1 2 3 4 5 6 7 8 9 10&#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;Enter the coordinates of the Aircraft Carrier (5 cells):&#10;&#10;&gt; F3 F7&#10;  1 2 3 4 5 6 7 8 9 10&#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;F ~ ~ O O O O O ~ ~ ~&#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;Enter the coordinates of the Battleship (4 cells):&#10;&#10;&gt; A1 D1&#10;  1 2 3 4 5 6 7 8 9 10&#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;B O ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;C O ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;D O ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;F ~ ~ O O O O O ~ ~ ~&#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;Enter the coordinates of the Submarine (3 cells):&#10;&#10;&gt; J7 J10&#10;Error! Wrong length of the Submarine! Try again:&#10;&gt; J10 J8&#10;  1 2 3 4 5 6 7 8 9 10&#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;B O ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;C O ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;D O ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;F ~ ~ O O O O O ~ ~ ~&#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;J ~ ~ ~ ~ ~ ~ ~ O O O&#10;Enter the coordinates of the Cruiser (3 cells):&#10;&#10;&gt; B9 D8&#10;Error! Wrong ship location! Try again:&#10;&gt; B9 D9&#10;  1 2 3 4 5 6 7 8 9 10&#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;B O ~ ~ ~ ~ ~ ~ ~ O ~&#10;C O ~ ~ ~ ~ ~ ~ ~ O ~&#10;D O ~ ~ ~ ~ ~ ~ ~ O ~&#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;F ~ ~ O O O O O ~ ~ ~&#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;J ~ ~ ~ ~ ~ ~ ~ O O O&#10;Enter the coordinates of the Destroyer (2 cells):&#10;&#10;&gt; E6 D6&#10;Error! You placed it too close to another one. Try again:&#10;&gt; I2 J2&#10;  1 2 3 4 5 6 7 8 9 10&#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;B O ~ ~ ~ ~ ~ ~ ~ O ~&#10;C O ~ ~ ~ ~ ~ ~ ~ O ~&#10;D O ~ ~ ~ ~ ~ ~ ~ O ~&#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;F ~ ~ O O O O O ~ ~ ~&#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;I ~ O ~ ~ ~ ~ ~ ~ ~ ~&#10;J ~ O ~ ~ ~ ~ ~ O O O&#10;Press Enter and pass the move to another player&#10;...&#10;Player 2, place your ships on the game field&#10;  1 2 3 4 5 6 7 8 9 10&#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&#10;Enter the coordinates of the Aircraft Carrier (5 cells):&#10;&#10;&gt; &#10;Enter the coordinates of the Aircraft Carrier (5 cells):" type="java.lang.AssertionError">java.lang.AssertionError: Exception in test #1
+
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
+	at java.base/java.lang.String.charAt(String.java:1519)
+	at battleship.GameController$Utils.convertCoordsInIndices(GameController.kt:247)
+	at battleship.GameController$Utils.checkCoords(GameController.kt:221)
+	at battleship.GameController.placeFleet(GameController.kt:127)
+	at battleship.GameController.play(GameController.kt:24)
+	at battleship.MainKt.main(Main.kt:4)
+	at battleship.MainKt.main(Main.kt)
+
+Please find below the output of your program during this failed test.
+Note that the '&gt;' character indicates the beginning of the input line.
+
+---
+
+Player 1, place your ships on the game field
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+Enter the coordinates of the Aircraft Carrier (5 cells):
+
+&gt; F3 F7
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+Enter the coordinates of the Battleship (4 cells):
+
+&gt; A1 D1
+  1 2 3 4 5 6 7 8 9 10
+A O ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ ~ ~
+C O ~ ~ ~ ~ ~ ~ ~ ~ ~
+D O ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+Enter the coordinates of the Submarine (3 cells):
+
+&gt; J7 J10
+Error! Wrong length of the Submarine! Try again:
+&gt; J10 J8
+  1 2 3 4 5 6 7 8 9 10
+A O ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ ~ ~
+C O ~ ~ ~ ~ ~ ~ ~ ~ ~
+D O ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ O O O
+Enter the coordinates of the Cruiser (3 cells):
+
+&gt; B9 D8
+Error! Wrong ship location! Try again:
+&gt; B9 D9
+  1 2 3 4 5 6 7 8 9 10
+A O ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ O ~
+C O ~ ~ ~ ~ ~ ~ ~ O ~
+D O ~ ~ ~ ~ ~ ~ ~ O ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ O O O
+Enter the coordinates of the Destroyer (2 cells):
+
+&gt; E6 D6
+Error! You placed it too close to another one. Try again:
+&gt; I2 J2
+  1 2 3 4 5 6 7 8 9 10
+A O ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ O ~
+C O ~ ~ ~ ~ ~ ~ ~ O ~
+D O ~ ~ ~ ~ ~ ~ ~ O ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+Press Enter and pass the move to another player
+...
+Player 2, place your ships on the game field
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+Enter the coordinates of the Aircraft Carrier (5 cells):
+
+&gt; 
+Enter the coordinates of the Aircraft Carrier (5 cells):
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:203)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:108)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:39)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+Player 1, place your ships on the game field
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+Enter the coordinates of the Aircraft Carrier (5 cells):
+
+> F3 F7
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+Enter the coordinates of the Battleship (4 cells):
+
+> A1 D1
+  1 2 3 4 5 6 7 8 9 10
+A O ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ ~ ~
+C O ~ ~ ~ ~ ~ ~ ~ ~ ~
+D O ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+Enter the coordinates of the Submarine (3 cells):
+
+> J7 J10
+Error! Wrong length of the Submarine! Try again:
+> J10 J8
+  1 2 3 4 5 6 7 8 9 10
+A O ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ ~ ~
+C O ~ ~ ~ ~ ~ ~ ~ ~ ~
+D O ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ O O O
+Enter the coordinates of the Cruiser (3 cells):
+
+> B9 D8
+Error! Wrong ship location! Try again:
+> B9 D9
+  1 2 3 4 5 6 7 8 9 10
+A O ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ O ~
+C O ~ ~ ~ ~ ~ ~ ~ O ~
+D O ~ ~ ~ ~ ~ ~ ~ O ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ O O O
+Enter the coordinates of the Destroyer (2 cells):
+
+> E6 D6
+Error! You placed it too close to another one. Try again:
+> I2 J2
+  1 2 3 4 5 6 7 8 9 10
+A O ~ ~ ~ ~ ~ ~ ~ ~ ~
+B O ~ ~ ~ ~ ~ ~ ~ O ~
+C O ~ ~ ~ ~ ~ ~ ~ O ~
+D O ~ ~ ~ ~ ~ ~ ~ O ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ O O O O O ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ O ~ ~ ~ ~ ~ ~ ~ ~
+J ~ O ~ ~ ~ ~ ~ O O O
+Press Enter and pass the move to another player
+...
+Player 2, place your ships on the game field
+  1 2 3 4 5 6 7 8 9 10
+A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+Enter the coordinates of the Aircraft Carrier (5 cells):
+
+> 
+Enter the coordinates of the Aircraft Carrier (5 cells):
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
